@@ -85,6 +85,7 @@ header {
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
+  display: none;
 }
 .modal-navbar__menu {
   list-style: none;
@@ -114,6 +115,7 @@ header {
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
+  display: block;
 }
 
 .main {

@@ -79,6 +79,7 @@ header{
     opacity: 0;
     visibility: hidden;
     transition:0.3s;
+    display:none;
     @media(max-width:800px){
         //visibility:visible
     }
@@ -110,4 +111,5 @@ header{
     transform: translateX(0);
     opacity: 1;
     visibility: visible;
+    display:block
 }
