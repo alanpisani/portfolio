@@ -75,7 +75,10 @@ header{
     right:0;
     top:0;
     background-color: v.$Wrapper;
+    transform: translateX(100%);
+    opacity: 0;
     visibility: hidden;
+    transition:0.3s;
     @media(max-width:800px){
         //visibility:visible
     }
@@ -102,4 +105,9 @@ header{
         float:right;
         padding:1rem;
     }
+}
+.navbar-movile{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
 }
