@@ -1,10 +1,18 @@
 @use 'variables'as v;
 
+header{
+    position: sticky;
+    top:0;
+    background-color: v.$Wrapper;
+    border-bottom: 1px solid v.$Aqua;
+    z-index: 100;
+}
 .navbar{
     display:flex;
     justify-content: space-between;
     padding:2rem;
-    align-items: center;
+    align-items: center;    
+    //border:1px solid red;
     &__brand span{
         color: v.$Aqua;
     }
