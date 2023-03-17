@@ -49,6 +49,10 @@
         }
         @media(max-width:800px){
             width:20rem;
+            &:hover{
+                width:20.5rem;
+                height:25.5rem;
+            }
         }
         &__image{
             border:1px solid green;

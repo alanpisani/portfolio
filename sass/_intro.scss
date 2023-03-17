@@ -32,10 +32,17 @@
     border-radius:1rem;
     transition:0.2s;
     box-shadow: 1px 3px 11px -5px black;
+    width:8rem;
     &:hover{
         background-color: v.$TransparentAqua;
         cursor:pointer;
         box-shadow: none;
+    }
+    & a{
+        text-decoration: none;
+    }
+    @media (max-width:800px){
+        margin:0 auto;
     }
 }
 .foto{

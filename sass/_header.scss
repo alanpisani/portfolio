@@ -6,6 +6,10 @@ header{
     background-color: v.$Wrapper;
     border-bottom: 1px solid v.$Aqua;
     z-index: 100; 
+    width:auto;
+    @media(max-width:800px){
+        width:auto;
+    }
 }
 .navbar{
     display:flex;

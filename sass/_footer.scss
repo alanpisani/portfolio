@@ -15,11 +15,15 @@
         display:flex;
         //border:1px solid red;
         width:30rem;
+        //border:1px solid red;
         justify-content: space-evenly;
         font-size: 2rem;
         color:v.$Wrapper;
         & a:visited{
             color:v.$Wrapper;
+        }
+        @media(max-width:800px){
+            width:100%;
         }
         
 
