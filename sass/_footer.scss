@@ -1,0 +1,21 @@
+@use 'variables'as v;
+
+.footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    background-color: v.$Aqua;
+    gap:1rem;
+    &__name{
+        font-size: 2em;
+    }
+    &__social-network{
+        display:flex;
+        border:1px solid red;
+        width:30rem;
+        justify-content: space-evenly;
+        font-size: 2rem;
+    }
+}

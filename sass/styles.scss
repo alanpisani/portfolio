@@ -1,0 +1,24 @@
+@use 'variables' as v;
+
+@use 'header';
+@use 'intro';
+@use 'about';
+@use 'portfolio';
+@use 'contact';
+@use 'footer';
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper,.portfolio{
+    width:100vw;
+    height:60vw;
+    background-color:v.$Wrapper;
+    color:white;
+}

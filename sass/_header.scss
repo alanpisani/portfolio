@@ -1,0 +1,43 @@
+@use 'variables'as v;
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    padding:2rem;
+    align-items: center;
+    &__brand span{
+        color: v.$Aqua;
+    }
+    &__menu{
+        list-style: none;
+        display: flex;
+        width:50%;
+        justify-content: space-around;
+        & a{
+            color:white;
+            text-decoration: none;
+            padding: 1rem;
+            transition:0.3s;
+            position:relative;
+            &:before{
+                content: "";
+                display:block;
+                width:0;
+                height:3px;
+                background-color:v.$Aqua;
+                position:absolute;
+                bottom:0;
+                transition:0.3s
+            }
+            &:hover{
+                color:v.$Aqua;
+                &:before{
+                    width:100%
+                }
+            }
+        }
+        & .active{
+            color:v.$Aqua;
+        }
+    }
+}

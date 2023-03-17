@@ -1,0 +1,11 @@
+@use 'variables' as v;
+
+@mixin subrayado-aqua{
+    content: "";
+    display:block;
+    position:absolute;
+    width:12rem;
+    height:5px;
+    background-color:v.$Aqua;
+    bottom:0;
+}
