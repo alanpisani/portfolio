@@ -8,9 +8,19 @@
     display:flex;
     gap:1rem;
     padding:2rem;
+    @media(max-width:800px){
+       padding:0;
+       height:100%;
+       flex-direction: column;
+    }
 }
 .main h1{
     font-size: 4rem;
+    @media (max-width:800px){
+        font-size: 2.5rem;
+        margin-top:1rem;
+        //margin-bottom:2rem;
+    }
 }
 .main span{
     color:v.$Aqua;
@@ -32,10 +42,17 @@
     width:650px;
     height:600px;
     border:7px solid v.$Aqua;
+    @media (max-width:800px){
+        display:none;
+    }
 }
 
 .info-content{
     display:flex;
     flex-direction: column;
     gap:1rem;
+    @media (max-width:800px){
+        gap:2rem;
+        margin-bottom:1rem;
+    }
 }

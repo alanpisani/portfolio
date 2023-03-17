@@ -5,7 +5,7 @@ header{
     top:0;
     background-color: v.$Wrapper;
     border-bottom: 1px solid v.$Aqua;
-    z-index: 100;
+    z-index: 100; 
 }
 .navbar{
     display:flex;
@@ -21,6 +21,9 @@ header{
         display: flex;
         width:50%;
         justify-content: space-around;
+        @media(max-width:800px){
+            display:none;
+        }
         & a{
             color:white;
             text-decoration: none;
@@ -47,5 +50,52 @@ header{
         & .active{
             color:v.$Aqua;
         }
+    }
+    &__btn-menu{
+        background-color:transparent;
+        border:none;
+        color:white;
+        font-size:2rem;
+        cursor:pointer;
+        display:none;
+        @media(max-width:800px){
+            display:block;
+        }
+    }
+}
+.modal-navbar{
+    border:1px solid red;
+    width:50%;
+    height:100vh;
+    position:absolute;
+    right:0;
+    top:0;
+    background-color: v.$Wrapper;
+    visibility: hidden;
+    @media(max-width:800px){
+        //visibility:visible
+    }
+    &__menu{
+        list-style: none;
+        padding:2rem;
+        margin-top:3rem;
+        display:flex;
+        flex-direction: column;
+        gap:2rem;
+        width:100%;
+        & a{
+            color:white;
+            text-decoration: none;
+            transition:0.3s;
+            position:relative;
+        }
+    }
+    &__close-menu{
+        background-color: transparent;
+        border:0;
+        font-size:1.5rem;
+        color:red;
+        float:right;
+        padding:1rem;
     }
 }

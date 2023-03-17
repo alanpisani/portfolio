@@ -31,6 +31,9 @@
     gap:10rem;
     align-items: center;
     text-align: center;
+    @media(max-width:800px){
+        flex-direction: column;
+    }
     &__card{
         border:2px solid green;
         width:30rem;
@@ -43,6 +46,9 @@
         &:hover{
             width:30.5rem;
             height:25.5rem;
+        }
+        @media(max-width:800px){
+            width:20rem;
         }
         &__image{
             border:1px solid green;

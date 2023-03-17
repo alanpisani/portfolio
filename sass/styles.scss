@@ -21,4 +21,8 @@ body{
     height:45vw;
     background-color:v.$Wrapper;
     color:white;
+    @media(max-width:800px){
+        height:auto;
+        width:auto;
+    }
 }
