@@ -1,7 +1,7 @@
 @use 'variables' as v;
 @use 'mixins';
 
-.about{
+.formation{
     //border:1px solid red;
     
     margin:0 auto;
@@ -34,6 +34,21 @@
             @media(max-width:800px){
                margin-bottom:1rem;
             }
+        }
+    }
+    &__skills{
+        display:flex;
+        gap:2rem;
+        justify-content: space-evenly;
+        &__icon{
+            width:6rem;
+            //outline:1px solid red;
+        }
+        & .html{
+            width:8rem;
+        }
+        & .bootstrap{
+            width:10rem;
         }
     }
 }

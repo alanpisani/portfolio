@@ -57,9 +57,13 @@
             }
             & textarea{
                 height:15rem;
+                min-height:15rem;
+                max-height:18rem;
                 color:white;
                 background:none;
                 padding:1.2rem;
+                max-width:28rem;
+                min-width:28rem;
             }
             & .btn-submit{
                 display:flex;

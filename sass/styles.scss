@@ -2,7 +2,7 @@
 
 @use 'header';
 @use 'intro';
-@use 'about';
+@use 'formation';
 @use 'portfolio';
 @use 'contact';
 @use 'footer';
@@ -19,4 +19,5 @@ body{
 .wrapper,.portfolio{
     background-color:v.$Wrapper;
     color:white;
+    padding-top:5rem;
 }
