@@ -46,6 +46,7 @@
     }
     & a{
         text-decoration: none;
+        color:v.$Wrapper;
     }
     @media (max-width:800px){
         margin:0 auto;

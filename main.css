@@ -164,6 +164,7 @@ header {
 }
 .download-cv a {
   text-decoration: none;
+  color: #191c32;
 }
 @media (max-width: 800px) {
   .download-cv {
