@@ -50,8 +50,8 @@
                     Deseo comenzar mi vida laboral en el área IT para fortalecer mis habilidades, poder superarme dia a
                     dia y seguir desarrollándome como profesional.</p>
                 <div class="cv-container">
-                    <button class="download-cv"><a download href="cv alan pisani.pdf">Descargar CV</a></button>
-                    <button class="download-cv"><a href="https://drive.google.com/file/d/1G7Z2O9TAKlz7AOOAaWWYN8N0ky0jHyLe/view?usp=share_link" target="_blank">Ver CV</a></button>
+                    <a class="download-cv" download href="cv alan pisani.pdf">Descargar CV</a>
+                    <a class="download-cv" href="https://drive.google.com/file/d/1G7Z2O9TAKlz7AOOAaWWYN8N0ky0jHyLe/view?usp=share_link" target="_blank">Ver CV</a>
                 </div>
             </div>
             <img class="foto" src="foto.png" alt="foto Alan Pisani">
@@ -112,15 +112,15 @@
                     <h2>ESCAPE ROOM</h2>
                     <p>Juego de sala de escape que creamos como proyecto final en el centro de formación profesional.
                         Posee una cuenta regresiva y un ranking en donde figura los 10 mejores jugadores.</p>
-                        <div class="container__card__langs">
-                            <ul>
-                                <li>PHP</li>
-                                <li>MYSQL</li>
-                                <li>CSS</li>
-                                <li>BOOTSTRAP</li>
-                                <li>JAVASCRIPT</li>
-                            </ul>
-                        </div>
+                    <div class="container__card__langs">
+                        <ul>
+                            <li>PHP</li>
+                            <li>MYSQL</li>
+                            <li>CSS</li>
+                            <li>BOOTSTRAP</li>
+                            <li>JAVASCRIPT</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="container__card__links">
                     <a href="https://github.com/alanpisani/Sala-de-escape" target="_blank"><i

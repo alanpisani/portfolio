@@ -156,15 +156,14 @@ header {
   transition: 0.2s;
   box-shadow: 1px 3px 11px -5px black;
   width: 8rem;
+  text-decoration: none;
+  color: #191c32;
+  font-weight: 800;
 }
 .download-cv:hover {
   background-color: rgba(0, 255, 255, 0.7);
   cursor: pointer;
   box-shadow: none;
-}
-.download-cv a {
-  text-decoration: none;
-  color: #191c32;
 }
 @media (max-width: 800px) {
   .download-cv {
