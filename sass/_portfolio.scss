@@ -66,6 +66,19 @@
             height:222px;
             background-image:url("./sala.png");
         }
+        &__langs{
+            margin-top:1rem;
+            & ul{
+                display:flex;
+                justify-content: space-evenly;
+                list-style:none;
+                color:v.$Aqua;
+                @media(max-width:800px){
+                    font-size:0.8rem;
+                
+                 }
+            }
+        }
         &__links{
             display:flex;
             justify-content: space-evenly;

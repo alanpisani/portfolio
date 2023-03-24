@@ -64,6 +64,12 @@
                 padding:1.2rem;
                 max-width:28rem;
                 min-width:28rem;
+                @media(max-width:800px){
+                    max-width:18rem;
+                    min-width:18rem;
+                    min-height:15rem;
+                    max-height:15rem;
+                }
             }
             & .btn-submit{
                 display:flex;

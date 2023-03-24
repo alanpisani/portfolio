@@ -74,7 +74,7 @@ header {
 }
 
 .modal-navbar {
-  border: 1px solid red;
+  border: 1px solid black;
   width: 50%;
   height: 100vh;
   position: fixed;
@@ -189,6 +189,7 @@ header {
 }
 @media (max-width: 800px) {
   .info-content {
+    width: auto;
     gap: 2rem;
     margin-bottom: 1rem;
   }
@@ -239,16 +240,38 @@ header {
 .formation__skills {
   display: flex;
   gap: 2rem;
+  width: auto;
   justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+@media (max-width: 800px) {
+  .formation__skills {
+    gap: 1rem;
+  }
 }
 .formation__skills__icon {
   width: 6rem;
 }
+@media (max-width: 800px) {
+  .formation__skills__icon {
+    width: 2rem;
+  }
+}
 .formation__skills .html {
   width: 8rem;
 }
+@media (max-width: 800px) {
+  .formation__skills .html {
+    width: 2.8rem;
+  }
+}
 .formation__skills .bootstrap {
   width: 10rem;
+}
+@media (max-width: 800px) {
+  .formation__skills .bootstrap {
+    width: 4rem;
+  }
 }
 
 .portfolio {
@@ -323,6 +346,20 @@ header {
   width: 100%;
   height: 222px;
   background-image: url("./sala.png");
+}
+.container__card__langs {
+  margin-top: 1rem;
+}
+.container__card__langs ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  color: rgb(0, 255, 255);
+}
+@media (max-width: 800px) {
+  .container__card__langs ul {
+    font-size: 0.8rem;
+  }
 }
 .container__card__links {
   display: flex;
@@ -414,6 +451,14 @@ header {
   padding: 1.2rem;
   max-width: 28rem;
   min-width: 28rem;
+}
+@media (max-width: 800px) {
+  .contact-form__form textarea {
+    max-width: 18rem;
+    min-width: 18rem;
+    min-height: 15rem;
+    max-height: 15rem;
+  }
 }
 .contact-form__form .btn-submit {
   display: flex;

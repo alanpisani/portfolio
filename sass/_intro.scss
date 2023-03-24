@@ -65,6 +65,7 @@
     flex-direction: column;
     gap:1rem;
     @media (max-width:800px){
+        width:auto;
         gap:2rem;
         margin-bottom:1rem;
     }
