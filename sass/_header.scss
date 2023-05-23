@@ -36,8 +36,43 @@
             display:none;
         }
     }
+<<<<<<< HEAD
     &__cart-avatar{
         //border:1px solid blue;
+=======
+    &__btn-menu{
+        background-color:transparent;
+        border:none;
+        color:white;
+        font-size:2rem;
+        cursor:pointer;
+        display:none;
+        @media(max-width:800px){
+            display:block;
+        }
+    }
+}
+.modal-navbar{
+    border:1px solid black;
+    width:50%;
+    height:100vh;
+    position:fixed;
+    right:0;
+    top:0;
+    background-color: v.$Wrapper;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition:0.3s;
+    
+    @media(max-width:800px){
+        //visibility:visible
+    }
+    &__menu{
+        list-style: none;
+        padding:2rem;
+        margin-top:3rem;
+>>>>>>> 83eb0c1594764d9feb767dcac43bd78e224cba19
         display:flex;
         align-items: center;
         width:70px;
