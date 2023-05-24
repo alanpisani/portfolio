@@ -98,9 +98,9 @@
                     </div>
                 </div>
                 <div class="container__card__links">
-                    <a href="https://github.com/alanpisani/e-commerce" target="_blank"><i
+                    <a href="https://github.com/alanpisani/coshita-3D" target="_blank"><i
                             class="fa-brands fa-github"></i></a>
-                    <a href="https://alanpisani.github.io/e-commerce/" target="_blank"><i
+                    <a href="https://alanpisani.github.io/coshita-3D/" target="_blank"><i
                             class="fa-sharp fa-solid fa-globe"></i></a>
                 </div>
             </div>
@@ -156,7 +156,7 @@
     <footer class="footer">
         <h2 class="footer__name">Alan Pisani</h2>
         <div class="footer__social-network">
-            <a target="_blank" href="https://www.facebook.com/alan.pisani.9/"><i class="fa-brands fa-facebook"></i></a>
+            <a target="_blank" href="https://github.com/alanpisani"><i class="fa-brands fa-github"></i></a>
             <a target="_blank" href="https://www.instagram.com/alan.pisani/"><i class="fa-brands fa-instagram"></i></a>
             <a target="_blank" href="https://www.linkedin.com/in/alan-pisani-72527b258/"><i
                     class="fa-brands fa-linkedin"></i></a>
