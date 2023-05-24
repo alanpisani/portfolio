@@ -1,11 +1,77 @@
-@use 'variables' as v;
+@use 'variables'as v;
 
-@mixin subrayado-aqua{
-    content: "";
-    display:block;
+@mixin modal-background{
+    background-color:v.$Black-modal;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:none;
+    z-index: 1;
+}
+@mixin image-btn($top,$left,$showDesktop){
+    //background-color: v.$White;
+    width:40px;
+    height:40px;
+    //padding:12px;
+    border-radius:50%;
     position:absolute;
-    width:12rem;
-    height:5px;
-    background-color:v.$Aqua;
-    bottom:0;
+    top:$top;
+    left:$left;
+    &:hover{
+        cursor:pointer;
+    }
+    @media (min-width:1115px){
+        @if ($showDesktop == true){
+            display:block;
+        }
+        @else{
+            display:none;
+        }
+    }
+}
+@mixin changeNumber($pv, $ph){
+    width:25px;
+    height:100%;
+    padding:$pv $ph;
+    &:hover{
+        cursor:pointer;
+    }
+}
+@mixin button{
+    background-color:v.$Coshita;
+    width:100%;
+    height: 57px;
+    border-radius:8px;
+    border:none;
+    color:v.$White;
+    font-size:0.9em;
+    font-weight: 700;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:16px;
+    transition:0.2s;
+    &:hover{
+        cursor:pointer;
+        opacity: 0.5;
+    } 
+}
+@mixin clear{
+    background-color: v.$Grayish-alan;
+    width:9rem;
+    height: 57px;
+    border-radius:8px;
+    border:none;
+    color:v.$Coshita;
+    font-size:0.9em;
+    font-weight: 700;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:16px;
+    transition:0.2s;
+    text-transform: uppercase;
+    
 }

@@ -1,60 +1,45 @@
-@use 'variables'as v;
+@use 'variables';
 
-header{
-    position: sticky;
-    top:0;
-    background-color: v.$Wrapper;
-    border-bottom: 1px solid v.$Aqua;
-    z-index: 100; 
-    width:auto;
-    @media(max-width:800px){
-        width:auto;
-    }
-}
-.navbar{
-    display:flex;
-    justify-content: space-between;
-    padding:2rem;
-    align-items: center;    
+.header{
     //border:1px solid red;
-    &__brand span{
-        color: v.$Aqua;
+    display:flex;
+    position:sticky;
+    top:0;
+    background-color:black;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    padding: 0 24px;
+    z-index: 1;
+    @media (min-width: 1115px){
+        height: 112px;
+        border-bottom: 1px solid variables.$Coshita;
+    }
+    &__navegation{
+        width: 260px;
+        text-align: center;
+        height:100%;
+        //border:1px solid blue;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        //gap:px;
+        @media (min-width: 1115px){
+            width: 750px;
+        }
     }
     &__menu{
-        list-style: none;
-        display: flex;
-        width:50%;
-        justify-content: space-around;
-        @media(max-width:800px){
+        &:hover{
+            cursor:pointer;
+        }
+        @media (min-width: 1115px){
             display:none;
         }
-        & a{
-            color:white;
-            text-decoration: none;
-            padding: 1rem;
-            transition:0.3s;
-            position:relative;
-            &:before{
-                content: "";
-                display:block;
-                width:0;
-                height:3px;
-                background-color:v.$Aqua;
-                position:absolute;
-                bottom:0;
-                transition:0.3s
-            }
-            &:hover{
-                color:v.$Aqua;
-                &:before{
-                    width:100%
-                }
-            }
-        }
-        & .active{
-            color:v.$Aqua;
-        }
     }
+<<<<<<< HEAD
+    &__cart-avatar{
+        //border:1px solid blue;
+=======
     &__btn-menu{
         background-color:transparent;
         border:none;
@@ -87,29 +72,71 @@ header{
         list-style: none;
         padding:2rem;
         margin-top:3rem;
+>>>>>>> 83eb0c1594764d9feb767dcac43bd78e224cba19
         display:flex;
-        flex-direction: column;
-        gap:2rem;
-        width:100%;
-        & a{
-            color:white;
-            text-decoration: none;
-            transition:0.3s;
-            position:relative;
+        align-items: center;
+        width:70px;
+        justify-content: space-between;
+        @media (min-width: 1115px){
+            width:125px;
+        }
+
+    }
+    &__cart{
+        position:relative;
+        &--notification{
+            background-color: variables.$Coshita;
+            width:20px;
+            height:20px;
+            border-radius:16px;
+            position:absolute;
+            top: -5px;
+            right:-14px;
+            font-size:1rem;
+            text-align: center;
+            color:variables.$White;
+            opacity: 0;
+        }
+        &:hover{
+            cursor:pointer;
+        }
+
+    }
+    &__avatar{
+        width:24px;
+        height:30px;
+        border-radius: 100%;
+        transition:0.05s;
+        @media (min-width: 1115px){
+            width:45px;
+            height:35px;
+        }
+        &:hover{
+            cursor:pointer;
+            border:2px solid variables.$Coshita;
         }
     }
-    &__close-menu{
-        background-color: transparent;
-        border:0;
-        font-size:1.5rem;
-        color:red;
-        float:right;
-        padding:1rem;
+    &__logos{
+        //border:1px solid red;
+        width:320px;
+        height:50px;
+        margin-right:10px;
     }
-}
-.navbar-movile{
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
+    &__logo{
+        //border:1px solid blue;
+        width:160px;
+    }
+    &__logo-2{
+        //border:1px solid blue;
+        height:45px;
+
+    }
     
+
+}
+.cart-icon{
+    width:22px;
+}
+.display{
+    display:none;
 }

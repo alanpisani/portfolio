@@ -1,31 +1,49 @@
-@use 'variables'as v;
+@use 'variables' as v;
+@use 'mixins';
 
 .footer{
+    border:2px solid green;
+    margin-top:1rem;
+    background-color: v.$Black;
     display:flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    height:7rem;
     align-items: center;
-    height:100px;
-    background-color: v.$Aqua;
-    gap:1rem;
-    &__name{
-        font-size: 2em;
+    position: relative;
+    @media (max-width:330px){
+        width:20rem;
+        margin-left:1rem;
     }
-    &__social-network{
-        display:flex;
+    &__informacion{
+        color:v.$Coshita;
+    }
+    &__iconos{
         //border:1px solid red;
-        width:30rem;
-        //border:1px solid red;
-        justify-content: space-evenly;
-        font-size: 2rem;
-        color:v.$Wrapper;
-        & a:visited{
-            color:v.$Wrapper;
-        }
-        @media(max-width:800px){
-            width:100%;
-        }
-        
+        width:10rem;
+        height:5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:1rem;
+        margin-right:2rem;
+    }
+    &__icono{
+        width:3rem;
+        //height:10rem;
+        background-color:white;
+        background-repeat: initial;
+        border-radius:100%;
+        outline:1px solid black;
+    }
+}
 
+.wsp{
+    float:right;
+    background-color:transparent;
+    //border:1px solid red;
+    position: sticky;
+    bottom:5rem;
+    @media (max-width:330px){
+        margin:0 -20%;
     }
 }
